@@ -1,0 +1,152 @@
+        /* Grabs fonts from the google API */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        
+
+        /* (14 from Lecture) Flexbox container*/
+        .container {
+            display: flex;
+            background-color: rgb(13, 12, 12);
+            padding: 10px;
+        }
+        .box {
+            min-width: 50px; 
+            height: 100px;
+            color: rgb(13, 12, 12); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            text-align: center;
+            font-size: 42px; 
+            font-family: 'Roboto', sans-serif; 
+            font-weight: bold;
+        }
+
+        .box1 { background-image: url('duck_logo.GIF'); background-size: cover; flex: 1; }        
+        .box2 { background-color: rgb(191, 41, 41); flex: 4; } 
+        .box3 { background-color: rgb(28, 157, 196); flex: 4; } 
+        .box4 { background-color: rgb(255, 255, 255); flex: 4; } 
+        .box5 { background-color: rgb(218, 153, 49); flex: 4; } 
+        
+
+        .feature-photo-container {
+            position: relative; 
+            width: calc(100% - 20px); /* Remove padding */
+            margin: 0 auto; 
+            margin-top: 20px; /* extra space from above */
+            text-align: center;
+        }
+       
+        .feature-photo {
+            width: 100%; 
+            max-height: 460px; 
+            opacity: 0.68; 
+        }
+        
+        .additional-image {
+            position: absolute; /* Position is always in the container */
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            /*
+            Transform:
+            https://developer.mozilla.org/en-US/docs/Web/CSS/transform 
+
+            Translate:
+            https://www.w3schools.com/cssref/css_pr_translate.php
+            */
+            
+            width: 32%; 
+            height: auto; 
+        }
+
+        .projects-container {
+            display: flex;
+            background-color: rgb(13, 12, 12);
+            padding: 10px;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+        .project-box {
+            width: 200px;
+            height: 200px;
+            background-color: #fff; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .project-image {
+            max-width: 80%;
+            max-height: 80%;
+            margin-bottom: 10px;
+        }
+        .project-text {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            color: rgb(13, 12, 12);
+        }
+
+        .text-boxes-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .text-box {
+            width: calc(50% - 10px); /* Removes padding*/
+            padding: 20px;
+            background-color: rgb(13, 12, 12); 
+            color: #ffffff; 
+            font-size: 16px; 
+            border-radius: 5px; 
+        }
+
+        .footer-container {
+            display: flex;
+            background-color: rgb(28, 157, 196);
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        .footer-left {
+            margin-right: 20px;
+        }
+
+        .footer-left img {
+            width: 150px; 
+            height: auto;
+        }
+
+        .footer-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            width: 120px; 
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .footer-info p {
+            margin: 5px 0;
+        }
+
+        .back-to-top {
+            align-self: flex-end;
+        }
+
+        .back-to-top a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
